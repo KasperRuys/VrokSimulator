@@ -1,0 +1,38 @@
+﻿<Window x:Class="VrokFightSimulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Vrok Fighting Simulator" Height="284" Width="779.267">
+    <Grid x:Name="VrokFightSimulator" RenderTransformOrigin="0,0" Margin="0,0,2,-3">
+        <Button x:Name="btnStart" Content="Simulate" HorizontalAlignment="Left" Margin="153,10,0,0" VerticalAlignment="Top" Width="75" Click="btnStart_Click"/>
+        <TextBox x:Name="txtsims" HorizontalAlignment="Left" Height="20" Margin="73,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="lblvrok" Content="Vrok" HorizontalAlignment="Left" Margin="5,180,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblbc" Content="Boneclaw" HorizontalAlignment="Left" Margin="5,206,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblavgdamagebc" Content="0" HorizontalAlignment="Left" Margin="98,206,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.711,0.385"/>
+        <Label x:Name="lblaveragedamagevrok" Content="0" HorizontalAlignment="Left" Margin="98,180,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Average_Damage" Content="Average Damage" HorizontalAlignment="Left" Margin="98,149,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblvrokwins" Content="0" HorizontalAlignment="Left" Margin="220,180,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblboneclawwins" Content="0" HorizontalAlignment="Left" Margin="220,206,0,0" VerticalAlignment="Top"/>
+        <Label Content="Wins" HorizontalAlignment="Left" Margin="220,149,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
+        <CheckBox x:Name="chbReckless" Content="Reckless" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chbRage" Content="Rage" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="tekst" Content="Vrok Win rate:" HorizontalAlignment="Left" Margin="296,7,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="lblVrokwinrate" Content="1" HorizontalAlignment="Left" Margin="407,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.763,0.231" FontWeight="Bold"/>
+        <CheckBox x:Name="chbShadowjump" Content="ShadowJump" HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top" Checked="chbShadowjump_Checked_1" Unchecked="chbShadowjump_Unchecked"/>
+        <TextBox x:Name="txtShadowJumpAmount" HorizontalAlignment="Left" Height="19" Margin="107,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="41" RenderTransformOrigin="0.31,0.565" Text="0" Visibility="Hidden"/>
+        <Label x:Name="lblAveragerounds" Content="0" HorizontalAlignment="Left" Margin="407,33,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Average Rounds:" HorizontalAlignment="Left" Margin="298,33,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="lblshadowjumphits" Content="Hits" HorizontalAlignment="Left" Margin="150,78,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Label x:Name="lblamount" Content="Iterations" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblaveragehpleft" Content="Average HP" HorizontalAlignment="Left" Margin="273,149,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="lblVrokhpaverage" Content="0" HorizontalAlignment="Left" Margin="273,180,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblBoneclawhpaverage" Content="0" HorizontalAlignment="Left" Margin="273,206,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbldie" Content="d" HorizontalAlignment="Left" Margin="521,30,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblplus" Content="+" HorizontalAlignment="Left" Margin="573,30,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Label" HorizontalAlignment="Left" Margin="521,128,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAmountofdamagedie" HorizontalAlignment="Left" Height="23" Margin="496,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="25"/>
+        <TextBox x:Name="txtSideddie" HorizontalAlignment="Left" Height="23" Margin="538,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35"/>
+        <TextBox x:Name="txtflatdamageplus" HorizontalAlignment="Left" Height="23" Margin="591,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="25"/>
+        <!-- <CheckBox x:Name="chbSurprise" Content="Surprise" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top" Checked="chbSurprise_Checked" Unchecked="chbSurprise_Unchecked_1"/> -->
+
+    </Grid>
+</Window>
